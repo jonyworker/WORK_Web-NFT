@@ -1,0 +1,81 @@
+/*///////////////////////////////////
+===== layout - hot-item Section =====
+///////////////////////////////////*/
+.hot-item-content .hot-item-card {
+  background-color: $color-elevation-1;
+  border-radius: 16px;
+  padding: 12px 24px;
+}
+.hot-item-content .ranking-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $color-alpha-white-35;
+  padding: 12px 0;
+}
+.hot-item-content .ranking-item .ranking-sort {
+  @include display-B-4;
+  color: $color-alpha-white-35;
+}
+.hot-item-content .ranking-item .ranking-picture {
+  flex: 0 0 60px
+}
+.hot-item-content .ranking-item .ranking-text {
+  width: 100%;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.hot-item-content .ranking-item .ranking-top,
+.hot-item-content .ranking-item .ranking-bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  // -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.hot-item-content .ranking-item .ranking-top .title-wrap {
+  @include display-B-4;
+  color: $color-white;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+.hot-item-content .ranking-item .ranking-top .ranking-title {
+  @include display-B-4;
+  color: $color-white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  // width: 100%;
+}
+.hot-item-content .ranking-item .ranking-top .ranking-value {
+  @include display-B-4;
+  white-space: nowrap;
+  // flex:0 1;
+  // flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1535px) {}
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1199px) {}
+/*----- max-width 992 -----*/
+@media screen and (max-width: 991px) {}
+/*----- max-width 768 -----*/
+@media screen and (max-width: 767px) {}
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}

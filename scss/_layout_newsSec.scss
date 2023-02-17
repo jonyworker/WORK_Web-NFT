@@ -1,0 +1,71 @@
+
+/*//////////////////////////////////
+===== layout - news Section =====
+//////////////////////////////////*/
+
+.news-content .card-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*----- 卡片圖片 -----*/
+.news-content .card-image {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.news-content .card-image .card-time-wrap {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.news-content .card-image .card-time-wrap p {
+  @include display-B-4;
+  color: $color-white;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: $color-purple;
+}
+
+
+
+
+/*----- 卡片下方文字區塊 -----*/
+/*----- 卡片下方文字 - 容器 -----*/
+
+.news-content .card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+  color: $color-white;
+}
+/*----- 卡片下方文字 - 文字 -----*/
+
+.news-content .card-paragraph {
+  flex: 1;
+}
+.news-content .card-text .card-tag {
+  @include display-L-4;
+  padding: 2px 8px;
+  background-color: $color-purple;
+  border-radius: 4px;
+}
+.news-content .card-text h3 {
+  @include display-B-3;
+  -webkit-line-clamp: 2;
+}
+.news-content .card-text .card-paragraph p {
+  @include body-L-2;
+  -webkit-line-clamp: 4;
+  color: $color-alpha-white-55;
+}
+
+.news-content .card-text small {
+  @include body-L-2;
+  color: $color-alpha-white-35;
+}

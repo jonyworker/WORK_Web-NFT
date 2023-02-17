@@ -1,0 +1,29 @@
+// 載入基礎設定
+@import "base_reset";
+@import "base_mixin";
+@import "base_variables";
+@import "base_global_setting.scss";
+@import "base_fluid_calculator";//置換成這個
+@import "base_typography";
+@import "base_spacing_utilities";
+
+// 載入bootstrap 設定
+@import "bootstrap-grid";
+
+
+// layout區塊設定
+// @import "layout_header";
+@import "layout_topbar";
+@import "layout_footer";
+@import "layout_banner";
+@import "layout_monthlySec";
+@import "layout_hot-item";
+@import "layout_minting";
+@import "layout_newsSec";
+@import "layout_nftSec";
+@import "layout_hot-item";
+@import "layout_walletSec";
+
+// component區塊設定
+@import "component_btn";
+@import "component_homepage-title";

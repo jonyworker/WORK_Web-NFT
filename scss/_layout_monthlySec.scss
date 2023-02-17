@@ -1,0 +1,81 @@
+
+/*//////////////////////////////////
+===== layout - monthly Section =====
+//////////////////////////////////*/
+
+
+
+
+
+/*///////////////////////////////
+===== monthly Section - 附圖 =====
+///////////////////////////////*/
+.monthly-sub-pics {
+  margin-top: -9%;
+}
+.monthly-sub-pics .monthly-pic {
+  border-radius: 13px;
+  overflow: hidden;
+}
+.monthly-sub-pics .monthly-pic-wrap {
+  border: 3px solid transparent;
+  border-radius: 16px;
+  background: 
+  linear-gradient($color-elevation-1, $color-elevation-1) padding-box,
+  linear-gradient(var(--sub-rotate-angle), #960CE2 0%, #62A3EF 100%) border-box;
+  position: relative;
+  z-index: 1;
+}
+.monthly-sub-pics .monthly-pic-wrap::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: 
+  linear-gradient(var(--sub-rotate-angle), #960CE2 0%, #62A3EF 100%) border-box;
+  transform: scale(1.02, 1.03);
+  z-index: -1;
+  filter: blur(5px);
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.monthly-sub-pics .monthly-pic-wrap:hover,
+.monthly-sub-pics .monthly-pic-wrap:hover::before {
+  animation-duration: 0.5s;
+  animation-name: subRotate;
+  animation-timing-function: ease-in;
+}
+.monthly-sub-pics .monthly-pic-wrap:hover::before {
+  opacity: .7;
+}
+@keyframes subRotate {
+  0% {
+    --sub-rotate-angle:111.96deg;
+  }
+  100% {
+    --sub-rotate-angle:471.96deg;
+  }
+}
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1535px) {}
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1199px) {}
+/*----- max-width 992 -----*/
+@media screen and (max-width: 991px) {}
+/*----- max-width 768 -----*/
+@media screen and (max-width: 767px) {}
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .monthly-sub-pics {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}

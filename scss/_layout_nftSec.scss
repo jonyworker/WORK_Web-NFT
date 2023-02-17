@@ -1,0 +1,123 @@
+
+/*//////////////////////////////////
+===== layout - nft Section =====
+//////////////////////////////////*/
+
+.nft-content .card-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*----- 卡片圖片 -----*/
+.nft-content .card-image {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+/*----- 卡片下方文字區塊 -----*/
+/*----- 卡片下方文字 - 容器 -----*/
+
+.nft-content .card-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: $color-elevation-1;
+  border-radius: 0px 0px 16px 16px;
+  padding: 16px;
+  color: $color-white;
+}
+.nft-content .card-text .icon-ok-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nft-content .card-text .icon-ok {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  flex: 1 0 14px;
+}
+.nft-content .card-text .icon-ok img {
+  // height: 14px;
+}
+.nft-content .card-text .icon-ok p{
+  width: calc(100% - 14px);
+}
+/*----- 卡片下方文字 - 文字 -----*/
+.nft-content .card-title {
+  flex: 1;
+}
+.nft-content .card-text h3 {
+  @include display-B-3;
+  -webkit-line-clamp: 2;
+}
+.nft-content .card-text h4 {
+  @include display-B-3;
+  color: $color-white;
+}
+.nft-content .card-text p {
+  @include body-L-1;
+  color: $color-alpha-white-35;
+}
+
+
+/*----- 卡片下方圖片 - profile-list -----*/
+.nft-content .profile-list {
+  display: flex;
+}
+.nft-content .profile-list .profile-item {
+  width: 38px;
+  height: 38px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.nft-content .profile-list .profile-item:nth-last-of-type(-1n+2) {
+  margin-left: -6%;
+}
+
+
+/*----- 卡片下方圖片 - card-body body-text -----*/
+.nft-content .card-body p {
+  text-align: end;
+}
+.nft-content .card-body h4 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.nft-content .ntf-currency-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+}
+.nft-content .ntf-currency-icon img {
+  height: auto;
+}
+
+
+.nft-content .sub-info-wrap {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.nft-content .sub-info-wrap .text-likes {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nft-content .sub-info-wrap .icon-likes {
+  width: 20px;
+  height: 20px;
+  fill:$color-alpha-white-35;
+}
+.nft-content .sub-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}

@@ -1,0 +1,53 @@
+
+/*/////////////////////////////////
+===== layout - wallet Section =====
+/////////////////////////////////*/
+
+.wallet-content .table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.wallet-content .table-wrap table {
+  @include body-L-1;
+  color: $color-alpha-white-35;
+  width: 100%;
+  white-space: nowrap;
+  border-collapse:separate; 
+  border-spacing: 0 8px;
+}
+.wallet-content .table-wrap table thead th {
+  padding-right: 20px;
+}
+.wallet-content .table-wrap table thead th:not(:first-of-type) {
+  text-align: start;
+}
+
+
+.wallet-content .table-wrap table tbody th,
+.wallet-content .table-wrap table tbody td {
+  background-color: $color-elevation-1;
+  @include body-B-1;
+}
+.wallet-content .table-wrap table tbody th {
+  border-radius: 16px 0 0 16px;
+  padding: 16px;
+  vertical-align: middle;
+}
+.wallet-content .table-wrap table tbody td {
+  color: $color-white;
+  padding: 8px 16px 8px 0;
+  vertical-align: middle;
+}
+.wallet-content .table-wrap table tbody td:last-of-type {
+  border-radius: 0 16px 16px 0;
+}
+
+.wallet-content .table-wrap table tbody  span {
+  display: inline-block;
+  padding: 8px;
+  font-size: 24px;
+  border: 1px solid $color-purple;
+  border-radius: 8px;
+}

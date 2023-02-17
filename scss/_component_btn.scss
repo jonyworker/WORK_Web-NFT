@@ -1,0 +1,37 @@
+
+/*/////////////////////////
+===== component - btn =====
+/////////////////////////*/
+.btn {
+  border: none;
+  display: inline-block;
+  text-align: center;
+  padding: 4px 24px;
+  border-radius: 200px;
+  background-color: $color-alpha-white-20;
+  color: $color-alpha-white-35;
+  transition: .3s;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:active,
+.btn.active {
+  background-image: $color-gradient-1;
+  color: $color-white;
+}
+.btn-outline {
+  border: 2px solid $color-purple;
+}
+.btn-bold {
+  @include button-B-1;
+}
+.btn-light {
+  @include button-L-1;
+}
+.btn-wrap {
+  display: flex;
+  gap: 16px;
+}
+.btn-mobile {
+  padding: 16px 24px;
+}

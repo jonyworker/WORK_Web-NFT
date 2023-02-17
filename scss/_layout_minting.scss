@@ -1,0 +1,82 @@
+
+/*//////////////////////////////////
+===== layout - Minting Section =====
+//////////////////////////////////*/
+
+.minting-content .card-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*----- 卡片圖片 -----*/
+.minting-content .card-image {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+  position: relative;
+}
+.minting-content .card-image .card-time-wrap {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.minting-content .card-image .card-time-wrap p {
+  @include display-B-4;
+  color: $color-white;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: $color-purple;
+}
+
+
+
+
+/*----- 卡片下方文字區塊 -----*/
+/*----- 卡片下方文字 - 容器 -----*/
+
+.minting-content .card-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: $color-purple;
+  border-radius: 0px 0px 16px 16px;
+  padding: 16px;
+  color: $color-white;
+}
+/*----- 卡片下方文字 - 文字 -----*/
+.minting-content .card-title {
+  flex: 1;
+}
+.minting-content .card-text h3 {
+  @include display-B-3;
+  -webkit-line-clamp: 2;
+}
+.minting-content .card-text .card-time {
+  @include body-L-1;
+}
+/*----- 卡片下方文字 - 列表 -----*/
+.minting-content .card-text .info-list {
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+}
+.minting-content .card-text .info-item:nth-of-type(-1n+2) {
+  padding-right: 3.2%;
+  border-right: 1px solid #fff;
+  margin-right: 3%;
+}
+.minting-content .card-text .community-icon {
+  fill: $color-white;
+}
+.minting-content .card-text .info-item {
+  display: flex;
+}
+.minting-content .card-text .info-item h4 {
+  @include display-B-4;
+}
+.minting-content .card-text .info-item small {
+  @include functional-L-1;
+} 
